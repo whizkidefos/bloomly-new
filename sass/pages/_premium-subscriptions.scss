@@ -1,0 +1,18 @@
+.premium-subscriptions-banner {
+	background: $hub;
+	color: white;
+	position: relative;
+	// height: 65vh;
+
+	h1 {
+		color: white;
+	}
+
+	.scroll-down-icon {
+		margin-top: 3rem;
+
+		i {
+			font-size: 30px;
+		}
+	}
+}

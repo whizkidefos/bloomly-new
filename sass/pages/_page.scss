@@ -1,0 +1,82 @@
+.page {
+	position: relative;
+}
+
+.page-green-shape {
+	position: absolute;
+	left: -5rem;
+	top: 5%;
+}
+
+.pink-shape-green-lines {
+	position: absolute;
+	left: -4rem;
+	top: 30%;
+}
+
+.page-orange-green-lines {
+	position: absolute;
+	top: 10%;
+	right: -5rem;
+	z-index: -1;
+}
+
+@media (max-width: 960px) {
+	.page-green-shape,
+	.page-orange-green-lines,
+	.pink-shape-green-lines {
+		display: none;
+	}
+}
+
+// FAQ
+.bloomly-faq {
+	padding: 1rem 0;
+
+	a {
+		color: $teal;
+		font-size: 16px;
+		transition: color 200ms;
+
+		&:hover {
+			color: $blue;
+		}
+	}
+
+	p {
+		color: $blue;
+	}
+}
+
+// Survey Form
+div.wpforms-container-full {
+	margin-bottom: 24px;
+	width: 100%;
+	border: 1px solid #2b475223;
+	border-radius: 5px;
+	padding: 40px;
+}
+
+// Contact Form
+form.wpcf7-form.init input[type="text"],
+form.wpcf7-form.init input[type="email"] {
+	border: 1px solid $blue;
+	width: 100%;
+	height: 35px;
+}
+
+form.wpcf7-form.init textarea {
+	border: 1px solid $blue;
+	width: 100%;
+}
+
+form.wpcf7-form.init input[type="submit"] {
+	background: $teal;
+	border: none;
+	color: white;
+	padding: 12px 30px;
+
+	&:hover {
+		background: $hub;
+	}
+}

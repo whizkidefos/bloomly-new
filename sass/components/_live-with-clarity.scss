@@ -1,0 +1,45 @@
+.live-with-clarity {
+    background: $teal;
+    padding: 7rem 0;
+
+    h3 {
+        color: white;
+    }
+
+    p {
+        color: white;
+        font-weight: 300;
+    }
+}
+
+.live-with-clarity-chart {
+    position: relative;
+    img {
+        margin: 0;
+        padding: 0;
+        position: relative;
+        z-index: 2;
+    }
+
+    img.chart-shapes {
+        position: absolute;
+        top: -1rem;
+        left: 60%;
+        z-index: 1;
+    }
+}
+
+@media (max-width: 960px) {
+    .live-with-clarity {
+        img {
+            display: block;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        img.chart-shapes {
+            width: 300px;
+            left: 0;
+        }
+    }
+}

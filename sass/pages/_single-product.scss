@@ -1,0 +1,128 @@
+.bloomly-breadcrumb {
+	a {
+		color: $teal;
+
+		&:hover {
+			color: $hub;
+		}
+	}
+
+	li > span {
+		color: $blue;
+	}
+}
+
+.callout {
+	color: $blue;
+	display: block;
+	margin: 20px 0;
+	padding: 15px 20px;
+	border-radius: 5px;
+	font-weight: 400;
+
+	&-teal {
+		background: $tealLight;
+	}
+
+	&-pink {
+		background: $pink;
+	}
+
+	a {
+		color: $blue;
+		font-weight: bold;
+		margin-left: 10px;
+
+		&::after {
+			font-family: "Font Awesome 5 Pro";
+			font-size: 12px;
+			content: "\f054";
+			margin-left: 5px;
+		}
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+.gallery-container {
+	position: relative;
+}
+
+.gallery-slide {
+	img {
+		width: 100%;
+		height: 450px;
+		object-fit: cover;
+	}
+}
+
+.gallery-button-prev,
+.gallery-button-next {
+	background: $teal;
+	border-radius: 30px;
+	color: white;
+	width: 30px;
+	height: 30px;
+	padding: 2px;
+	position: absolute;
+}
+
+.swiper-pagination-bullets {
+	span {
+		border: 1px solid $teal;
+	}
+}
+
+.swiper-pagination-bullet-active {
+	background: $teal;
+}
+
+.product-content {
+	h1 {
+		margin: 0 !important;
+	}
+
+	h6 {
+		margin-bottom: 0;
+	}
+
+	.price {
+		color: $teal;
+		font-weight: 500;
+	}
+
+	.quantity {
+		height: 30px;
+		display: none;
+	}
+
+	button[type="submit"] {
+		display: block;
+		font-family: inherit;
+		margin: 10px 0 20px 0;
+		width: 100%;
+		height: 50px;
+		border: none;
+		border-radius: 50px;
+		background: $teal;
+		color: white;
+		font-weight: 600;
+	}
+}
+
+.additional-info {
+	font-weight: 300;
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.added_to_cart.wc-forward {
+	display: block;
+	height: 30px;
+	padding: 20px;
+	background: $tealLight;
+	color: $blue;
+	margin-bottom: 15px;
+}

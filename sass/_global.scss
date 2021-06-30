@@ -1,0 +1,116 @@
+$teal: #50b09f;
+$tealLight: #bde0dc;
+$blue: #2a4752;
+$hub: #c7677a;
+$pumpkin: #fdc9a1;
+$orange: #f39163;
+$pink: #f6c1c2;
+$grey: #00000080;
+$white: #ffffff;
+
+html,
+body {
+	font-family: "sofia-pro", sans-serif;
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+}
+
+::selection {
+	background-color: $teal;
+	color: white;
+}
+
+//ScrollBar
+/* width */
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: $tealLight;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: $teal;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: $hub;
+}
+
+p,
+blockquote {
+	font-family: "sofia-pro", sans-serif;
+	font-weight: 300;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "sofia-pro-soft", sans-serif;
+	font-weight: 500;
+}
+
+section {
+	padding: 7rem 0;
+
+	h3 {
+		font-size: 30px;
+		padding-bottom: 15px;
+	}
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	color: $teal;
+	text-decoration: none;
+	transition: color 250ms;
+
+	&:hover {
+		color: $hub;
+		text-decoration: none;
+	}
+}
+
+.uk-tab > * > a {
+	border-bottom: 1px solid transparent;
+	font-size: inherit;
+	text-transform: unset;
+	transition: color 0.1s ease-in-out;
+}
+
+.uk-tab > .uk-active > a {
+	color: $teal;
+	border-color: #50b09f;
+}
+
+.small-container {
+	max-width: 800px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.top-margin-3 {
+	margin-top: 3rem;
+}
+
+.customers-are-saying-card {
+	position: relative;
+}
+
+.uk-card-badge.uk-label {
+	background: $teal;
+	color: white;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}

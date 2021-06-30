@@ -1,0 +1,62 @@
+.the-numbers {
+    background: $hub;
+    position: relative;
+    width: 100%;
+
+    h3 {
+        color: white;
+    }
+
+    p {
+        color: white;
+        font-weight: 300;
+        margin-bottom: 30px;
+    }
+
+    &-before {
+        position: absolute;
+        right: -5rem;
+        top: -7rem;
+        width: 250px;
+        z-index: 1;
+    }
+
+    &-after {
+        position: absolute;
+        bottom: -5rem;
+        left: -5rem;
+        z-index: 1;
+    }
+}
+
+.tests-performed, .infections-detected, .abnormal-results {
+    .number {
+        background: white;
+        border-radius: 100%;
+        font-family: "sofia-pro-soft", sans-serif;
+        font-size: 30px;
+        font-weight: bold;
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    h6 {
+        color: white;
+        padding: 10px;
+    }
+}
+
+.tests-performed .number {
+    color: $orange;
+}
+
+.infections-detected .number {
+    color: $hub;
+}
+
+.abnormal-results .number {
+    color: $teal;
+}

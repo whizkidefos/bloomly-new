@@ -1,0 +1,104 @@
+.woocommerce-content {
+	padding: 12rem 0 2rem 0;
+}
+
+td.product-name {
+	color: $teal;
+}
+
+input#coupon_code.input-text {
+	border-radius: 20px;
+	margin-top: 5px;
+	width: 100px;
+}
+
+.woocommerce-info {
+	border-top-color: $teal;
+
+	a {
+		color: $teal;
+	}
+
+	&::before {
+		color: $teal;
+	}
+}
+
+#payment.woocommerce-checkout-payment {
+	background-color: $teal;
+	color: white;
+
+	a {
+		color: white;
+	}
+}
+
+.woocommerce form .form-row input.input-text {
+	border: 0;
+	border: 1px solid rgb(223, 222, 222);
+	width: 100%;
+	height: 35px;
+	padding: 10px;
+}
+
+.select2-container--default .select2-selection--single {
+	border: 1px solid rgb(223, 222, 222);
+	height: 35px;
+}
+
+.form-row textarea {
+	height: 100px;
+	border: 0;
+	border: 1px solid rgb(223, 222, 222);
+}
+
+input#coupon_code.input-text {
+	border-radius: 20px;
+	border-color: $blue;
+	outline: none;
+	margin-top: 5px;
+	width: 120px;
+	height: 30px;
+	padding: 0 10px;
+}
+
+.woocommerce .quantity .qty {
+	width: 3.631em;
+	text-align: center;
+	padding: 5px;
+}
+
+.woocommerce .cart .button,
+.woocommerce .cart input.button {
+	float: none;
+	font-size: 14px;
+	padding: 10px 20px;
+}
+
+.woocommerce-message {
+	border-top-color: $teal;
+}
+
+.woocommerce-message::before {
+	content: "\e015";
+	color: $teal;
+}
+
+.woocommerce a.remove {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 2rem;
+	height: 2rem;
+	font-size: 1.5em;
+	text-align: center;
+	border-radius: 100%;
+	color: $hub !important;
+	text-decoration: none;
+	font-weight: 700;
+	border: 0;
+
+	&:hover {
+		background-color: $hub;
+	}
+}

@@ -1,0 +1,142 @@
+.bloomly-btn-white {
+	background: transparent;
+	border: 2px solid white;
+	border-radius: 50px;
+	color: white;
+	display: inline-block;
+	font-weight: 400;
+	opacity: 1;
+	padding: 6px 16px 8px 16px;
+	transition: 200ms;
+
+	&:hover {
+		background: white;
+		color: $teal !important;
+		text-decoration: none;
+	}
+}
+
+.bloomly-btn-teal {
+	background: transparent;
+	border: 2px solid $teal;
+	border-radius: 50px;
+	color: $teal;
+	display: inline-block;
+	font-weight: 400;
+	opacity: 1;
+	padding: 6px 16px 8px 16px;
+	transition: 200ms;
+
+	&:hover {
+		background: $teal;
+		color: white;
+		text-decoration: none;
+	}
+}
+
+.bloomly-btn-blue {
+	background: transparent;
+	border: 2px solid $blue;
+	border-radius: 50px;
+	color: $blue;
+	display: inline-block;
+	font-weight: 400;
+	opacity: 1;
+	padding: 6px 16px 8px 16px;
+	transition: 200ms;
+
+	&:hover {
+		background: $blue;
+		color: white;
+		text-decoration: none;
+	}
+}
+
+.bloomly-btn-underline {
+	// border-bottom: 1px solid $teal;
+	color: $teal;
+	text-decoration: none;
+	transition: all 350ms;
+
+	&:hover {
+		border-bottom-color: $hub;
+		color: $hub;
+		text-decoration: none;
+	}
+}
+
+.bloomly-btn-hub {
+	color: $hub;
+	text-decoration: none;
+	transition: all 350ms;
+
+	&::after {
+		font-family: "Font Awesome 5 Pro";
+		content: "\f054";
+		font-size: 12px;
+		margin-left: 5px;
+	}
+
+	&:hover {
+		color: $teal;
+		text-decoration: none;
+	}
+
+	&:hover i {
+		transform: translateX(3px);
+	}
+}
+
+div.wpforms-container-full .wpforms-form input[type="submit"],
+div.wpforms-container-full .wpforms-form button[type="submit"],
+div.wpforms-container-full .wpforms-form .wpforms-page-button {
+	background-color: #2b4752;
+	border: 1px solid #2b4752;
+	border-radius: 30px;
+	color: #fff;
+	font-size: 1em;
+	font-family: inherit;
+	padding: 10px 20px;
+
+	&:hover {
+		background: $hub;
+		border-color: $hub;
+	}
+}
+
+// Woocommerce Buttons
+#review_form #submit {
+	background: $teal;
+	color: white;
+}
+
+.woocommerce button.button,
+.woocommerce input.button,
+.woocommerce #respond input#submit.alt,
+.woocommerce a.button.alt,
+.woocommerce button.button.alt,
+.woocommerce input.button.alt {
+	background-color: $teal;
+	border-radius: 30px;
+	color: #fff;
+	-webkit-font-smoothing: antialiased;
+
+	&:hover {
+		background-color: $hub;
+		color: #fff;
+		transition: 250ms;
+	}
+}
+
+.woocommerce ul.products li.product .button {
+	margin-top: 1em;
+	background: $teal;
+	border-radius: 20px;
+	color: white;
+
+	&:hover {
+		background-color: $hub;
+		color: #fff;
+		transition: 250ms;
+	}
+}

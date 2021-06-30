@@ -1,0 +1,85 @@
+.ssl-data-protection {
+	padding: 3rem 0;
+
+	.uk-container {
+		max-width: 1024px;
+		width: 100%;
+		margin: 0 auto;
+	}
+}
+
+.icon {
+	color: white;
+	min-width: 50px;
+	height: 50px;
+	margin-right: 20px;
+	border-radius: 100%;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.icon-hub {
+	background: $hub;
+}
+
+.icon-orange {
+	background: $orange;
+}
+
+.ssl-certificate {
+	padding: 0;
+	display: flex;
+
+	img {
+		display: block;
+		background: $hub;
+		border-radius: 100%;
+		width: 50px;
+		height: 50px;
+		line-height: 50px;
+		padding: 10px;
+		margin-right: 20px;
+	}
+
+	h4 {
+		color: $blue;
+		font-weight: normal;
+		margin-bottom: 5px;
+	}
+
+	p {
+		color: $blue;
+		font-weight: 300;
+		margin: 0;
+	}
+}
+
+.data-protection {
+	padding: 0;
+	display: flex;
+
+	img {
+		display: block;
+		background: $orange;
+		border-radius: 100%;
+		width: 60px;
+		height: 50px;
+		line-height: 50px;
+		padding: 10px;
+		margin-right: 20px;
+	}
+
+	h4 {
+		color: $blue;
+		font-weight: normal;
+		margin-bottom: 5px;
+	}
+
+	p {
+		color: $blue;
+		font-weight: 300;
+		margin: 0;
+	}
+}

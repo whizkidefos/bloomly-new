@@ -1,0 +1,58 @@
+.latest-news-outer-container {
+	position: relative;
+}
+
+.news-container {
+	width: 100%;
+	height: 100%;
+	margin-top: 30px;
+	// padding: 0 20px;
+	position: relative;
+	z-index: 2;
+}
+
+.news-slide {
+	width: 100%;
+
+	h5 {
+		color: $blue;
+	}
+}
+
+.news-button-next,
+.news-button-prev {
+	color: $blue;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	border: 2px solid $blue;
+	border-radius: 30px;
+	outline: none;
+	transition: 200ms;
+
+	position: absolute;
+	top: 40%;
+	z-index: 3;
+
+	&:hover {
+		background: $blue;
+		border-color: $blue;
+		color: white;
+	}
+}
+
+.news-button-next {
+	right: -36px;
+}
+
+.news-button-prev {
+	left: -36px;
+}
+
+.news-shape {
+	position: absolute;
+	bottom: 2rem;
+	right: -4rem;
+	transform: rotate(90deg);
+	z-index: 1;
+}

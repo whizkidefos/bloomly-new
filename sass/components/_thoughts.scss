@@ -1,0 +1,66 @@
+.thoughts {
+	img {
+		width: 80%;
+	}
+
+	.thoughts-content {
+		padding-top: 5rem;
+		position: relative;
+
+		.thoughts-container {
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	blockquote {
+		font-weight: 300;
+		font-style: normal;
+		font-size: 16px;
+	}
+
+	small {
+		color: $teal;
+	}
+}
+
+.thoughts-wrapper {
+	margin-bottom: 45px;
+}
+
+.thoughts-controls {
+	position: absolute;
+	bottom: -2rem;
+	left: 37px;
+	max-width: 300px;
+	height: 75px;
+	z-index: 10;
+}
+
+.thoughts-button-next,
+.thoughts-button-prev {
+	color: $blue;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	border: 2px solid $blue;
+	border-radius: 30px;
+	outline: none;
+	top: 40%;
+	transition: 200ms;
+	z-index: 3;
+
+	&:hover {
+		background: $blue;
+		border-color: $blue;
+		color: white;
+	}
+}
+
+.thoughts-button-next {
+	right: -50px;
+}
+
+.thoughts-button-prev {
+	left: -36px;
+}

@@ -135,7 +135,7 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 1rem 3rem 1rem 3rem;
+  padding: 1rem 5rem 1rem 5rem;
   z-index: 30;
 }
 
@@ -165,7 +165,7 @@ header {
 }
 
 .desktop-nav {
-  padding-right: 6rem;
+  padding-right: 10rem;
 }
 
 .desktop-nav a:not(:last-of-type) {
@@ -655,6 +655,7 @@ div.wpforms-container-full .wpforms-form .wpforms-page-button:hover {
   color: white;
   font-size: 2em;
   line-height: 1.4;
+  text-transform: lowercase;
 }
 
 .banner-button-next,
@@ -791,7 +792,10 @@ div.wpforms-container-full .wpforms-form .wpforms-page-button:hover {
     right: 50%;
     max-width: 180px;
   }
-  .left-green-shape, .pink-shape, .hub-orange-lines, .orange-green-lines {
+  .left-green-shape,
+  .pink-shape,
+  .hub-orange-lines,
+  .orange-green-lines {
     display: none;
   }
   .banner-button-next,
@@ -1783,7 +1787,6 @@ input#coupon_code.input-text {
   width: 2rem;
   height: 2rem;
   font-size: 1.5em;
-  text-align: center;
   border-radius: 100%;
   color: #c7677a !important;
   text-decoration: none;

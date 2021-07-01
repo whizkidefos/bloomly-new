@@ -33,6 +33,7 @@
 		color: white;
 		font-size: 2em;
 		line-height: 1.4;
+		text-transform: lowercase;
 	}
 }
 
@@ -148,7 +149,10 @@
 		max-width: 180px;
 	}
 
-	.left-green-shape, .pink-shape, .hub-orange-lines, .orange-green-lines {
+	.left-green-shape,
+	.pink-shape,
+	.hub-orange-lines,
+	.orange-green-lines {
 		display: none;
 	}
 
@@ -156,7 +160,6 @@
 	.banner-button-prev {
 		margin-top: 250px;
 	}
-
 }
 
 @media (max-width: 768px) {

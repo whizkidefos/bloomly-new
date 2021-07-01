@@ -1,0 +1,42 @@
+@import "https://use.typekit.net/ght2kva.css";
+
+body.login {
+	background-color: whitesmoke;
+	font-family: "sofia-pro", sans-serif !important;
+}
+
+body.login div#login h1 a {
+	background-image: url("./images/logo-green.svg");
+	display: block;
+}
+
+body.login::after {
+	content: "";
+	background: url("./images/green-pink-lines.svg");
+	position: absolute;
+	top: 20%;
+	left: 0;
+	z-index: 2;
+}
+
+body.login div#login form#loginform {
+	border-radius: 5px;
+	font-family: "sofia-pro", sans-serif !important;
+}
+
+body.login div#login form#loginform input {
+	font-family: "sofia-pro", sans-serif !important;
+	border-color: #2a4752;
+	color: #2a4752;
+}
+
+body.login div#login form#loginform p.forgetmenot {
+	color: #2a4752;
+}
+
+body.login div#login form#loginform p.submit input#wp-submit {
+	background-color: #2a4752;
+	color: white;
+	font-weight: 600;
+	padding: 0px 20px;
+}

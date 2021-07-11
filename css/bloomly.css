@@ -2182,7 +2182,7 @@ input#coupon_code.input-text {
 .about-header {
   background: #50b09f;
   color: white;
-  padding: 10rem 0;
+  padding: 12rem 0;
 }
 
 .about-header h1 {
@@ -2193,4 +2193,37 @@ input#coupon_code.input-text {
   max-width: 700px;
   width: 100%;
   margin: 0 auto;
+}
+
+.about-showcase {
+  padding-bottom: 0;
+}
+
+.about-showcase-item i {
+  color: #50b09f;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.about-showcase-item h4 {
+  color: #50b09f;
+  margin: 0;
+}
+
+.about-showcase-item p {
+  margin-top: 10px;
+}
+
+.about-data-protection {
+  background: #c7677a;
+  color: white;
+}
+
+.about-data-protection h3 {
+  color: white;
+}
+
+.about-data-protection strong {
+  display: block;
+  margin-bottom: 20px;
 }

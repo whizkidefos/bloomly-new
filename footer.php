@@ -19,10 +19,12 @@
                 <a href="">Male Health</a>
                 <a href="">Female Health</a>
                 <a href="">Wellness Collections</a>
+                <a href="<?php get_site_url(); ?>/about">About</a>
             </div>
             <div class="">
                 <h4>Bloomly Health Club</h4>
                 <a href="<?php get_site_url(); ?>/corporate-packages">Corporate Packages</a>
+                <a href="<?php get_site_url(); ?>/bloomly-health-club">Bloomly Health Club</a>
                 <a href="<?php get_site_url(); ?>/what-our-customers-say">What Our Customers Say</a>
                 <a href="<?php get_site_url(); ?>/terms-of-use">Terms of use</a>
             </div>

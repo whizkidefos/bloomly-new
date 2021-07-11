@@ -1,71 +1,72 @@
 .corporate-packages-banner {
-    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url(../images/corporate-packages.jpeg) no-repeat center / cover;
-    background-attachment: fixed;
-    width: 100%;
-    height: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+		url(../images/corporate-packages.jpeg) no-repeat center / cover;
+	background-attachment: fixed;
+	width: 100%;
+	height: 400px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 
-    h1 {
-        color: white;
-        max-width: 520px;
-        text-align: center;
-    }
+	h1 {
+		color: white;
+		max-width: 520px;
+		text-align: center;
+	}
 }
 
 .corporate-packages-content {
-    padding: 4rem 0 2rem 0;
-    article {
-        max-width: 600px;
-        width: 95%;
-        margin: auto;
-    }
+	padding: 4rem 0 2rem 0;
+	article {
+		max-width: 600px;
+		width: 95%;
+		margin: auto;
+	}
 }
 
 .corporate-packages-showcase {
-    padding: 2rem 0;
+	padding: 2rem 0;
 
-    h3 {
-        color: $teal;
-    }
+	h3 {
+		color: $blue;
+	}
 }
 
 .blurb-container {
-    max-width: 768px;
-    width: 100%;
-    margin: 0 auto;
+	max-width: 768px;
+	width: 100%;
+	margin: 0 auto;
 }
 
 .blurb {
-    display: flex;
-    align-items: center;
-    padding: 30px 0;
+	display: flex;
+	align-items: center;
+	padding: 30px 0;
 
-    &-icon {
-        min-width: 50px;
-        height: 50px;
-        border-radius: 5%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background: $teal;
-        color: white;
-        margin-right: 20px;
-        padding: 20px;
+	&-icon {
+		min-width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background: $blue;
+		color: white;
+		margin-right: 20px;
+		padding: 20px;
 
-        i {
-            font-size: 30px;
-        }
-    }
+		i {
+			font-size: 30px;
+		}
+	}
 
-    h5 {
-        color: $blue;
-        font-size: 20px;
-        margin-bottom: 5px;
-    }
+	h5 {
+		color: $blue;
+		font-size: 20px;
+		margin-bottom: 5px;
+	}
 
-    p {
-        margin: 5px 0;
-    }
+	p {
+		margin: 5px 0;
+	}
 }

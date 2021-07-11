@@ -9,8 +9,9 @@
         <div class="uk-grid-large uk-child-width-1-2@m uk-flex-middle" uk-grid>
             <div class="">
                 <h1>Premium subscriptions, what’s in it for you?</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere est repellat ipsum doloremque ex cupiditate doloribus ad minus, nulla magnam!</p>
-                <a href="" class="bloomly-btn-white">Sign up now</a>
+                <p>We want to cater for the whole of the UK, making bespoke health testing affordable & accessible to as many people as possible.</p>
+                <a href="" class="bloomly-btn-white">Join the club</a>
+                <a href="" class="bloomly-btn-white">Login</a>
             </div>
             <div class="">
                 <img src="<?php t(); ?>/images/premium-sub.png" alt="">
@@ -26,9 +27,73 @@
 <section class="">
     <article class="premium-subscriptions-content">
         <div class="uk-container">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur non suscipit at! Quas non maxime ullam qui sint cumque consequuntur adipisci consequatur iste nostrum odio optio, sit nemo dolores dolor, modi dolorem earum libero. Obcaecati earum commodi laboriosam. Ipsam ipsum quam iste illo, suscipit possimus repudiandae iusto? Similique, magnam, earum vero animi molestias possimus natus nisi accusantium eius cumque quasi ipsum repudiandae rem soluta saepe pariatur debitis temporibus laboriosam officiis modi distinctio illo corporis! Excepturi rem odit molestias vero quasi. Facilis ut perferendis suscipit hic optio. Fugiat molestiae, mollitia impedit, minima culpa labore beatae sapiente optio autem est modi quasi voluptates incidunt obcaecati iste voluptatibus eligendi non laboriosam laudantium eum expedita ut. Corporis, aut cupiditate. Omnis voluptatibus optio itaque enim doloribus laboriosam tenetur, amet necessitatibus odit tempore in ex, vel neque, illo assumenda magni. Odit ullam saepe molestias quo incidunt, architecto, voluptates corporis dicta in sint tempora repudiandae ut consequatur!</p>
+            <div class="uk-child-width-1-2@m" uk-grid>
+                <div class="">
+                    <img src="<?php t(); ?>/images/premium-sub.png" alt="">
+                </div>
+                <div class="uk-margin-xlarge-top">
+                    <h3>More than just a Healthclub</h3>
+                    <p>As a member, you have the choice of any of our tests, at a heavily discounted affordable price. We are committed to providing our customers with honest, convenient and affordable health testing. We founded our company to shake up an often inaccessible industry by delivering health testing priced for everyone.</p>
+                </div>
+            </div>
         </div>
     </article>
+</section>
+
+<section class="benefits">
+    <div class="uk-container">
+        <h3 class="uk-text-center">Why join the club?</h3>
+        <h5 class="uk-text-center">Benefits</h5>
+        <br><br>
+        <div class="uk-child-width-1-2@m" uk-grid>
+            <div class="benefit-box">
+                <div class="benefit-box-icon">
+                    <i class="fas fa-vial"></i>
+                </div>
+                <div class="benefit-box-content">
+                    <h6>Choose the test you want</h6>
+                    <p>Self-care is the key to living a happy and healthy life and we’re here to make that easier for everyone.</p>
+                </div>
+            </div>
+            <div class="benefit-box">
+                <div class="benefit-box-icon">
+                    <i class="fas fa-treasure-chest"></i>
+                </div>
+                <div class="benefit-box-content">
+                    <h6>No hidded costs</h6>
+                    <p>Easy contract-free subscription. No commitments. Start, pause or cancel anytime.</p>
+                </div>
+            </div>
+            <div class="benefit-box">
+                <div class="benefit-box-icon">
+                    <i class="fas fa-poll-h"></i>
+                </div>
+                <div class="benefit-box-content">
+                    <h6>Results you can understand</h6>
+                    <p>Get easy to understand digital results and expert health advice within days.</p>
+                </div>
+            </div>
+            <div class="benefit-box">
+                <div class="benefit-box-icon">
+                    <i class="fas fa-coins"></i>
+                </div>
+                <div class="benefit-box-content">
+                    <h6>Massive Savings</h6>
+                    <p>By joining the health club you will have access to savings of up to 65%. Get the tests you need at the price you deserve.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="join-the-club-cta">
+    <div class="uk-container">
+        <article class="uk-text-center">
+            <p>Are you ready to take control of your health for £4.99/mo?</p>
+            <a href="" class="bloomly-btn-white">Join the club</a>
+            <small>You will be required to login or create an account</small>
+        </article>
+    </div>
 </section>
 
 <?php get_footer(); ?>

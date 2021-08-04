@@ -22,10 +22,12 @@
 	position: absolute;
 	left: -4rem;
 	bottom: -2rem;
+	z-index: -1;
 }
 
 .green-shape {
 	position: absolute;
 	top: 2rem;
 	right: -4rem;
+	z-index: -1;
 }

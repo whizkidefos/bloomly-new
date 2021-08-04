@@ -47,6 +47,29 @@ function bloomly_setup() {
     }
 add_action( 'after_setup_theme', 'bloomly_setup' );
 
+// Courses ContentType
+function create_posttype() {
+ 
+    register_post_type( 'results',
+    // CPT Options
+        array(
+            'labels' => array(
+                'name'          => __( 'Results' ),
+                'singular_name' => __( 'Result' )
+            ),
+            'public'        => true,
+            'has_archive'   => true,
+            'rewrite'       => array('slug' => 'results'),
+            'show_in_rest'  => true,
+            'menu_icon'     => 'dashicons-welcome-learn-more',
+            'supports'      => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt' ),
+ 
+        )
+    );
+}
+// Hooking up our function to theme setup
+add_action( 'init', 'create_posttype' );
+
 /*============ Custom Functions ===========*/
 function t() {
     echo esc_url( get_template_directory_uri() );
@@ -217,3 +240,23 @@ function login_checked_remember_me() {
     function rememberme_checked() {
     echo "<script>document.getElementById('rememberme').checked = true;</script>";
     }
+
+// Custom Logo
+function blsc_login_logo() { ?>
+    <style type="text/css">
+        #login h1 a, .login h1 a {
+            background-image: url('./images/logo-green.svg');
+        height:100px;
+        width:300px;
+        background-size: 300px 100px;
+        background-repeat: no-repeat;
+        padding-bottom: 10px;
+        }
+    </style>
+<?php }
+add_action( 'login_enqueue_scripts', 'blsc_login_logo' );
+
+function blsc_login_logo_url() {
+    return home_url();
+}
+add_filter( 'login_headerurl', 'blsc_login_logo_url' );

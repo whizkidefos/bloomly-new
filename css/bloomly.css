@@ -785,12 +785,18 @@ div.wpforms-container-full .wpforms-form .wpforms-page-button:hover {
 }
 
 @media (max-width: 960px) {
-  .banner-controlls {
+  .banner-controls {
     position: absolute;
-    bottom: 6rem;
+    bottom: 25rem;
     left: 50%;
     right: 50%;
-    max-width: 180px;
+    max-width: 200px;
+  }
+  .banner-controls .banner-button-prev {
+    left: -50px;
+  }
+  .banner-controls .banner-button-next {
+    right: -50px;
   }
   .left-green-shape,
   .pink-shape,
@@ -802,9 +808,6 @@ div.wpforms-container-full .wpforms-form .wpforms-page-button:hover {
   .banner-button-prev {
     margin-top: 250px;
   }
-}
-
-@media (max-width: 768px) {
   .scroll-down {
     display: none;
   }
@@ -856,7 +859,7 @@ div.wpforms-container-full .wpforms-form .wpforms-page-button:hover {
   position: absolute;
   bottom: -15rem;
   left: -10rem;
-  z-index: 2;
+  z-index: -1;
 }
 
 .our-tests-wrapper {
@@ -1290,9 +1293,31 @@ div.wpforms-container-full .wpforms-form .wpforms-page-button:hover {
   color: #2a4752;
 }
 
+.news-slide img {
+  border-radius: 6px;
+  height: 300px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.news-slide:hover h5 {
+  color: #50b09f;
+  -webkit-transition: 250ms;
+  transition: 250ms;
+}
+
+.news-slide:hover img {
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
+  -webkit-transition: all 350ms ease-in-out;
+  transition: all 350ms ease-in-out;
+}
+
 .news-button-next,
 .news-button-prev {
-  color: #2a4752;
+  background: #2a4752;
+  color: white;
   width: 30px;
   height: 30px;
   line-height: 30px;
@@ -1308,17 +1333,17 @@ div.wpforms-container-full .wpforms-form .wpforms-page-button:hover {
 
 .news-button-next:hover,
 .news-button-prev:hover {
-  background: #2a4752;
-  border-color: #2a4752;
+  background: #50b09f;
+  border-color: #50b09f;
   color: white;
 }
 
 .news-button-next {
-  right: -36px;
+  right: -15px;
 }
 
 .news-button-prev {
-  left: -36px;
+  left: -15px;
 }
 
 .news-shape {
@@ -1353,12 +1378,14 @@ div.wpforms-container-full .wpforms-form .wpforms-page-button:hover {
   position: absolute;
   left: -4rem;
   bottom: -2rem;
+  z-index: -1;
 }
 
 .green-shape {
   position: absolute;
   top: 2rem;
   right: -4rem;
+  z-index: -1;
 }
 
 .blogs-banner {
@@ -1597,12 +1624,14 @@ div.wpforms-container-full .wpforms-form .wpforms-page-button:hover {
   position: absolute;
   left: -5rem;
   top: 5%;
+  z-index: -1;
 }
 
 .pink-shape-green-lines {
   position: absolute;
   left: -4rem;
   top: 30%;
+  z-index: -1;
 }
 
 .page-orange-green-lines {
@@ -1941,6 +1970,7 @@ input#coupon_code.input-text {
   left: -4rem;
   -webkit-transform: rotate(0);
           transform: rotate(0);
+  z-index: -1;
 }
 
 .tests-shape2 {
@@ -1949,6 +1979,7 @@ input#coupon_code.input-text {
   right: -4rem;
   -webkit-transform: rotateZ(180deg);
           transform: rotateZ(180deg);
+  z-index: -1;
 }
 
 .tests-shape3 {
@@ -1957,6 +1988,7 @@ input#coupon_code.input-text {
   left: -5rem;
   -webkit-transform: rotateZ(180deg);
           transform: rotateZ(180deg);
+  z-index: -1;
 }
 
 @media (max-width: 1024px) {

@@ -5,6 +5,10 @@ body.login {
 	font-family: "sofia-pro", sans-serif !important;
 }
 
+#login {
+	width: 400px;
+}
+
 body.login div#login h1 a {
 	background-image: url("./images/logo-green.svg");
 	display: block;
@@ -39,4 +43,8 @@ body.login div#login form#loginform p.submit input#wp-submit {
 	color: white;
 	font-weight: 600;
 	padding: 0px 20px;
+}
+
+body.login div#login p#nav a {
+	display: none;
 }

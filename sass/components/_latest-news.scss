@@ -17,11 +17,29 @@
 	h5 {
 		color: $blue;
 	}
+
+	img {
+		border-radius: 6px;
+		height: 300px;
+		width: 100%;
+		object-fit: cover;
+	}
+
+	&:hover h5 {
+		color: $teal;
+		transition: 250ms;
+	}
+
+	&:hover img {
+		transform: translateY(-1px);
+		transition: all 350ms ease-in-out;
+	}
 }
 
 .news-button-next,
 .news-button-prev {
-	color: $blue;
+	background: $blue;
+	color: white;
 	width: 30px;
 	height: 30px;
 	line-height: 30px;
@@ -35,18 +53,18 @@
 	z-index: 3;
 
 	&:hover {
-		background: $blue;
-		border-color: $blue;
+		background: $teal;
+		border-color: $teal;
 		color: white;
 	}
 }
 
 .news-button-next {
-	right: -36px;
+	right: -15px;
 }
 
 .news-button-prev {
-	left: -36px;
+	left: -15px;
 }
 
 .news-shape {

@@ -35,7 +35,12 @@
                     ?></a>
 
                 <?php } ?>
-                <a href="/login" class="bloomly-btn-hub">Login</a>
+                <!-- <a href="/login" class="bloomly-btn-hub">Login</a> -->
+                <?php if ( is_user_logged_in() ): ?>
+                    <a href="<?php echo wp_logout_url( $_SERVER['REQUEST_URI'] ); ?>" class="bloomly-btn-hub">Logout</a> <!-- This redirects the user to the current page after logout. -->
+                <?php else: ?>
+                    <a href="<?php echo wp_login_url( $_SERVER['REQUEST_URI'] ); ?>" class="bloomly-btn-hub">Login</a> <!-- This redirects the user to the current page after login. -->
+                <?php endif; ?>
             </nav>
 
             <div class="burger">

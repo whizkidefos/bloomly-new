@@ -141,12 +141,20 @@
 }
 
 @media (max-width: 960px) {
-	.banner-controlls {
+	.banner-controls {
 		position: absolute;
-		bottom: 6rem;
+		bottom: 25rem;
 		left: 50%;
 		right: 50%;
-		max-width: 180px;
+		max-width: 200px;
+
+		.banner-button-prev {
+			left: -50px;
+		}
+
+		.banner-button-next {
+			right: -50px;
+		}
 	}
 
 	.left-green-shape,
@@ -160,10 +168,14 @@
 	.banner-button-prev {
 		margin-top: 250px;
 	}
-}
 
-@media (max-width: 768px) {
 	.scroll-down {
 		display: none;
 	}
 }
+
+// @media (max-width: 768px) {
+// 	.scroll-down {
+// 		display: none;
+// 	}
+// }

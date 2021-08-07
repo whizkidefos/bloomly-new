@@ -2259,3 +2259,13 @@ input#coupon_code.input-text {
   display: block;
   margin-bottom: 20px;
 }
+
+.dashboard {
+  padding-top: 10rem;
+}
+
+.member-content {
+  border: 1px solid #2a4752;
+  border-radius: 6px;
+  width: 100%;
+}

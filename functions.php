@@ -61,7 +61,7 @@ function create_posttype() {
             'has_archive'   => true,
             'rewrite'       => array('slug' => 'results'),
             'show_in_rest'  => true,
-            'menu_icon'     => 'dashicons-welcome-learn-more',
+            'menu_icon'     => 'dashicons-filter',
             'supports'      => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt' ),
  
         )
@@ -148,19 +148,21 @@ if (function_exists('acf_add_options_page')) {
 }
 
 /*============ Woocommerce Support ===========*/
-// if (class_exists('WooCommerce')) {
-//     function bloomly_woo_support() {
-//         add_theme_support('woocommerce');
-//     }
-//     add_action('after_setup_theme', 'bloomly_woo_support');
-// }
-
-// Remove WooCommerce Styles
-//add_filter( 'woocommerce_enqueue_styles', '__return_false' );
-
 add_theme_support( 'wc-product-gallery-zoom' );
 add_theme_support( 'wc-product-gallery-lightbox' );
 add_theme_support( 'wc-product-gallery-slider' );
+
+// Rename Products to Tests
+// add_filter( 'gettext', 'change_woocommerce_product_text', 20, 3 );
+
+// function change_woocommerce_product_text( $translated_text, $text, $domain ) {
+// 	switch ( $translated_text ) {
+// 		case 'Product' :
+// 			$translated_text = __( 'Test', 'woocommerce' );
+// 			break;
+// 	}
+//     return $translated_text;
+// }
 
 /**
  * Ensure cart contents update when products are added to the cart via AJAX

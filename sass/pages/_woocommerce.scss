@@ -101,3 +101,34 @@ input#coupon_code.input-text {
 		background-color: $hub;
 	}
 }
+
+// My Account
+.woocommerce-MyAccount-navigation {
+	ul {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding-left: 0;
+
+		li.is-active a {
+			color: $hub;
+			position: relative;
+
+			&::before {
+				content: "";
+				width: 10px;
+				height: 10px;
+				border-radius: 50px;
+				background-color: #c7677a;
+				position: absolute;
+				left: -13px;
+				top: 7px;
+				margin-right: 5px;
+			}
+		}
+	}
+}
+
+.woocommerce-MyAccount-navigation-link.woocommerce-MyAccount-navigation-link--downloads {
+	display: none;
+}

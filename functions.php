@@ -262,3 +262,6 @@ function blsc_login_logo_url() {
     return home_url();
 }
 add_filter( 'login_headerurl', 'blsc_login_logo_url' );
+
+// Included functions
+include('inc/add-new-tab-myaccount.php');

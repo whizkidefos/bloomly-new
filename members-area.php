@@ -133,11 +133,24 @@
                         </div>
                         <a href="#testDetails" class="bloomly-btn-teal" uk-toggle>View detail</a>
                     </div>
+                    <div class="test-results">
+                    <?php
+                    $ascribed_to = get_field( 'ascribed_to' );
+                    if ( $ascribed_to ) : ?>
+                        <a href="<?php echo get_author_posts_url( $ascribed_to['ID'] ); ?>"><?php echo esc_html( $ascribed_to['display_name'] ); ?>Title</a>
+                    <?php endif; ?>
+                    </div>
                 </div>
             </li>
-            <li>idiot 3</li>
+            <li>
+                <?php do_action('woocommerce_account_orders'); ?>
+            </li>
             <li>idiot 4</li>
-            <li>idiot 5</li>
+            <li>
+                <?php do_action('woocommerce_account_content'); ?>
+                <?php do_action('woocommerce_edit_account_address_form'); ?>
+                <?php do_action('woocommerce_account_navigation'); ?>
+            </li>
         </ul>  
     </div>
 </section>

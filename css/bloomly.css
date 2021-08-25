@@ -1000,7 +1000,7 @@ div.wpforms-container-full .wpforms-form .wpforms-page-button:hover {
 }
 
 .icon {
-  color: white;
+  color: white !important;
   min-width: 50px;
   height: 50px;
   margin-right: 20px;
@@ -1886,6 +1886,40 @@ input#coupon_code.input-text {
   background-color: #c7677a;
 }
 
+.woocommerce-MyAccount-navigation ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 0;
+}
+
+.woocommerce-MyAccount-navigation ul li.is-active a {
+  color: #c7677a;
+  position: relative;
+}
+
+.woocommerce-MyAccount-navigation ul li.is-active a::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50px;
+  background-color: #c7677a;
+  position: absolute;
+  left: -13px;
+  top: 7px;
+  margin-right: 5px;
+}
+
+.woocommerce-MyAccount-navigation-link.woocommerce-MyAccount-navigation-link--downloads {
+  display: none;
+}
+
 .page-not-found {
   position: relative;
   display: -webkit-box;
@@ -2347,6 +2381,7 @@ input#coupon_code.input-text {
 }
 
 .stat-box-rect h6 {
+  font-size: 10px;
   margin: 0;
 }
 
@@ -2418,6 +2453,7 @@ input#coupon_code.input-text {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 7rem;
 }
 
 .stats-details img {
